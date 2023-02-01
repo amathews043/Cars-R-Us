@@ -1,0 +1,18 @@
+#orderButton {
+    margin-top: 50px;
+    color: white; 
+    background-color: darkgreen; 
+    padding: 10px; 
+}
+
+.paintChoices, .wheelChoices, .interiorChoices, .techChoices {
+    border: 2px dashed blue; 
+    padding: 10px; 
+    background-color: beige;
+    margin: 50px;  
+}
+
+.choices {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+}
