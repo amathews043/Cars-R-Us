@@ -4,6 +4,7 @@ import { techHTML } from "./Tech.js"
 import { wheelsHTML } from "./Wheels.js"
 import { Orders } from "./Orders.js"
 import { addOrder } from "./database.js"
+import { typesHTML } from "./type.js"
 
 export const HTML = () => {
     return `
@@ -26,9 +27,12 @@ export const HTML = () => {
         </article>
     </article>
 
+    ${typesHTML()}
+
     <article>
         <button id="orderButton">Place Car Order</button>
     </article>
+
 
 <article class="customOrders">
 <h2>Custom Orders </h2> 

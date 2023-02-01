@@ -33,7 +33,18 @@ const buildOrderListItem = (order) => {
     )
 
     const totalCost = foundInterior.price + foundTech.price + foundWheel.price + foundPaint.price
-    const costString = totalCost.toLocaleString("en-US", {
+    let finalCost = ""
+
+    if(order.typeId === 1 ){
+        finalCost = totalCost
+    } else if (order.typeId === 2){
+        finalCost = totalCost * 1.5
+    } else if (order.typeId === 3){
+        finalCost = totalCost * 2.25
+    } else {
+        finalCost = "please select car type"
+    }
+    const costString = finalCost.toLocaleString("en-US", {
         style: "currency", 
         currency: "USD"
     })
