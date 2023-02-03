@@ -1,4 +1,4 @@
-import { getTechnologies, setTech } from "./database.js"
+import { getTechnologies, setTech } from "./dataAccess.js"
 
 const technologies = getTechnologies()
 

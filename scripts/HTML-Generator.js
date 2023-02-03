@@ -3,7 +3,7 @@ import { paintsHTML } from "./Paints.js"
 import { techHTML } from "./Tech.js"
 import { wheelsHTML } from "./Wheels.js"
 import { Orders } from "./Orders.js"
-import { addOrder } from "./database.js"
+import { addOrder } from "./dataAccess.js"
 import { typesHTML } from "./type.js"
 
 export const HTML = () => {

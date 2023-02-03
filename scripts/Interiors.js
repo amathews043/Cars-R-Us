@@ -1,4 +1,4 @@
-import { getInteriors, setInterior } from "./database.js";
+import { getInteriors, setInterior } from "./dataAccess.js";
 
 const interiors = getInteriors()
 
